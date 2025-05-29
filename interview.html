@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rejection Insights - Interview</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="welcome-card analysis-card interview-card">
+            <div class="card-header">
+                <a href="resume-upload.html" class="back-button">
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+                <div class="logo">
+                    <i class="fas fa-robot"></i>
+                    <h1>Rejection Insights</h1>
+                </div>
+                <a href="main-menu.html" class="home-button" title="Return to Main Menu">
+                    <i class="fas fa-home"></i>
+                </a>
+            </div>
+            
+            <div class="progress-tracker">
+                <div class="progress-step completed">
+                    <div class="step-number"><i class="fas fa-check"></i></div>
+                    <div class="step-text">Job Description</div>
+                </div>
+                <div class="progress-line"></div>
+                <div class="progress-step completed">
+                    <div class="step-number"><i class="fas fa-check"></i></div>
+                    <div class="step-text">Resume</div>
+                </div>
+                <div class="progress-line"></div>
+                <div class="progress-step active">
+                    <div class="step-number">3</div>
+                    <div class="step-text">Interview</div>
+                </div>
+                <div class="progress-line"></div>
+                <div class="progress-step">
+                    <div class="step-number">4</div>
+                    <div class="step-text">Analysis</div>
+                </div>
+            </div>
+            
+            <div class="section-content" id="interview-section">
+                <div class="section-header">
+                    <h2>Mock Interview</h2>
+                    <p>Practice answering interview questions for the position. The AI interviewer will ask relevant questions based on the job description.</p>
+                </div>
+                
+                <div class="interview-container">
+                    <div class="chat-header">
+                        <h3 id="interview-job-title">Interview</h3>
+                        <div class="chat-actions">
+                            <button id="restart-interview" class="icon-button" title="Restart Interview">
+                                <i class="fas fa-redo"></i>
+                            </button>
+                            <button id="save-transcript" class="icon-button" title="Save Transcript">
+                                <i class="fas fa-download"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="chat-messages" id="chat-messages">
+                        <!-- Messages will be added here dynamically -->
+                    </div>
+                    
+                    <div class="typing-indicator hidden">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                    
+                    <div class="chat-input">
+                        <textarea id="user-input" placeholder="Type your response here..." rows="3"></textarea>
+                        <button id="send-message" class="send-button">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="form-footer">
+                    <button id="interview-back" class="secondary-button">
+                        <i class="fas fa-arrow-left"></i> Back
+                    </button>
+                    <button id="interview-next" class="primary-button">
+                        Continue to Analysis <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="interview.js"></script>
+</body>
+</html> 

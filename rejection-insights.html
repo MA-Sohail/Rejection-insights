@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rejection Insights - Rejection Insights</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="welcome-card analysis-card">
+            <div class="card-header">
+                <a href="main-menu.html" class="back-button">
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+                <div class="logo">
+                    <i class="fas fa-robot"></i>
+                    <h1>Rejection Insights</h1>
+                </div>
+                <a href="main-menu.html" class="home-button" title="Return to Main Menu">
+                    <i class="fas fa-home"></i>
+                </a>
+            </div>
+            
+            <div class="progress-tracker">
+                <div class="progress-step active">
+                    <div class="step-number">1</div>
+                    <div class="step-text">Job Description</div>
+                </div>
+                <div class="progress-line"></div>
+                <div class="progress-step">
+                    <div class="step-number">2</div>
+                    <div class="step-text">Resume</div>
+                </div>
+                <div class="progress-line"></div>
+                <div class="progress-step">
+                    <div class="step-number">3</div>
+                    <div class="step-text">Interview</div>
+                </div>
+                <div class="progress-line"></div>
+                <div class="progress-step">
+                    <div class="step-number">4</div>
+                    <div class="step-text">Analysis</div>
+                </div>
+            </div>
+            
+            <div class="section-content" id="job-description-section">
+                <div class="section-header">
+                    <h2>Job Description</h2>
+                    <p>Please paste the job description for the position you applied to. This helps us understand the requirements and expectations for the role.</p>
+                </div>
+                
+                <div class="form-container">
+                    <textarea id="job-description" rows="12" placeholder="Paste the job description here..."></textarea>
+                    
+                    <div class="form-footer">
+                        <button id="job-description-next" class="primary-button">
+                            Continue <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="rejection-insights.js"></script>
+</body>
+</html> 

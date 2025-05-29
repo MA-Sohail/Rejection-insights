@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rejection Insights - Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="welcome-card analysis-card">
+            <div class="card-header">
+                <a href="interview.html" class="back-button">
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+                <div class="logo">
+                    <i class="fas fa-robot"></i>
+                    <h1>Rejection Insights</h1>
+                </div>
+                <a href="main-menu.html" class="home-button" title="Return to Main Menu">
+                    <i class="fas fa-home"></i>
+                </a>
+            </div>
+            
+            <div class="progress-tracker">
+                <div class="progress-step completed">
+                    <div class="step-number"><i class="fas fa-check"></i></div>
+                    <div class="step-text">Job Description</div>
+                </div>
+                <div class="progress-line"></div>
+                <div class="progress-step completed">
+                    <div class="step-number"><i class="fas fa-check"></i></div>
+                    <div class="step-text">Resume</div>
+                </div>
+                <div class="progress-line"></div>
+                <div class="progress-step completed">
+                    <div class="step-number"><i class="fas fa-check"></i></div>
+                    <div class="step-text">Interview</div>
+                </div>
+                <div class="progress-line"></div>
+                <div class="progress-step active">
+                    <div class="step-number">4</div>
+                    <div class="step-text">Analysis</div>
+                </div>
+            </div>
+            
+            <div class="section-content" id="analysis-section">
+                <div class="section-header">
+                    <h2>Rejection Analysis</h2>
+                    <p>Based on your resume, job description, and interview responses, here's our analysis of potential reasons for rejection and recommendations for improvement.</p>
+                </div>
+                
+                <div id="analysis-loading" class="analysis-loading">
+                    <div class="loading-spinner"></div>
+                    <p>Analyzing your profile and interview performance...</p>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" id="analysis-progress"></div>
+                    </div>
+                </div>
+                
+                <div id="analysis-results" class="analysis-results hidden">
+                    <!-- Analysis results will be loaded here -->
+                </div>
+                
+                <div class="form-footer">
+                    <button id="analysis-back" class="secondary-button">
+                        <i class="fas fa-arrow-left"></i> Back
+                    </button>
+                    <button id="download-analysis" class="primary-button">
+                        <i class="fas fa-download"></i> Download Analysis
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="analysis.js"></script>
+</body>
+</html> 
