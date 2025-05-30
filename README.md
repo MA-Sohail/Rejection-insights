@@ -96,10 +96,3 @@ python -m http.server 8000
 
 Contributions are welcome! Feel free to submit pull requests or open issues to improve the application.
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
----
-
-Created with ❤️ to help job seekers improve their career prospects.
